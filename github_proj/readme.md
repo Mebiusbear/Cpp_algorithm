@@ -1,6 +1,6 @@
-$$\Large \varepsilon=h\nu$$
+$$![1](http://latex.codecogs.com/svg.latex?\Large \varepsilon=h\nu)$$
 
-$$\Large \beta=\frac{1}{kT}$$
+$$![2](http://latex.codecogs.com/svg.latex?公式代码\Large \beta=\frac{1}{kT})$$
 
 $$\Large e^{-\beta h \nu}$$
 
