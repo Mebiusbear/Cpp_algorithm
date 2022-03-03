@@ -12,4 +12,4 @@
 
 ![7](http://latex.codecogs.com/svg.latex?\Large<\varepsilon>&{=}&\sum{e}^{-\beta{n}\varepsilon}{(a_1=1,q=e^{-\beta\varepsilon})})
 
-![8](http://latex.codecogs.com/svg.latex?\Large<\varepsilon>&=&\sum{e}^{-\beta{n}\varepsilon})
+![8](http://latex.codecogs.com/svg.latex?\Large<\varepsilon>)
