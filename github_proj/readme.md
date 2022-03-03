@@ -10,6 +10,6 @@
 
 ![6](http://latex.codecogs.com/svg.latex?\begin{bmatrix}{a_{1}}&{a_{2}}&{a_{3}}\\\\{b_{1}}&{b_{2}}&{b_{3}}\\\\{c_{1}}&{c_{2}}&{c_{3}}\\\\\end{bmatrix})
 
-![7](http://latex.codecogs.com/svg.latex?\Large<\varepsilon>&=&\sum{e}^{-\beta{n}\varepsilon}{(a_1=1,q=e^{-\beta\varepsilon})})
+![7](http://latex.codecogs.com/svg.latex?\Large<\varepsilon>&{=}&\sum{e}^{-\beta{n}\varepsilon}{(a_1=1,q=e^{-\beta\varepsilon})})
 
 ![8](http://latex.codecogs.com/svg.latex?\Large<\varepsilon>&=&\sum{e}^{-\beta{n}\varepsilon})
