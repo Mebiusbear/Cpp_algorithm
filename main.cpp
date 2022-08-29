@@ -1,5 +1,5 @@
 #include <iostream>
-#include "first.hpp"
+#include "tools.hpp"
 #include "sort_algorithm.hpp"
 
 using namespace std;
@@ -15,15 +15,10 @@ int main(){
          << size_arr << endl;
 
     cout << "arr: " << " ";
-    for (int i=0;i<=size_arr;i++){
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-    bubble_sort(arr,size_arr);
+    print_arr(arr);
 
+    bubble_sort(arr,size_arr);
     cout << "after_sort_arr: " << " ";
-    for (int i=0;i<=size_arr;i++){
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+    print_arr(arr);
+
 }

@@ -1,4 +1,4 @@
-#include "first.hpp"
+#include "tools.hpp"
 
 using namespace std;
 
@@ -14,3 +14,12 @@ int* rand_from100_shape10()
 	return res;
 }
 
+void print_arr(int *arr)
+{
+    int size_arr = sizeof(arr);
+    for (int i=0;i<=size_arr;i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+}
