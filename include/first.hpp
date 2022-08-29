@@ -1,5 +1,6 @@
 #pragma once
 
 #include <iostream>
+#include <cstdlib>
 
-void one2ten();
+int* rand_from100_shape10();

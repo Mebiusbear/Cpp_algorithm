@@ -1,10 +1,16 @@
 #include "first.hpp"
-#include <iostream>
 
 using namespace std;
-void one2ten()
+
+int* rand_from100_shape10()
 {
-    for (int i=0;i<10;i++){
-        cout << i << endl;
-        }
+	int *res=new int[10];
+
+    for (int i=0;i<10;i++)
+    {
+        int a = rand()%100;
+        res[i] = a;
+    }
+	return res;
 }
+
