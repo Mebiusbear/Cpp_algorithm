@@ -4,21 +4,27 @@
 
 using namespace std;
 
+
+
 int main(){
     cout << "This is main!"
          << endl;
-    
+        
     int* arr;
-	arr = rand_from100_shape10();
-    int size_arr = sizeof(arr);
-    cout << "size of arr: "
+    int size_arr = 17;
+    cout << "size of arr(num)      : "
          << size_arr << endl;
-
-    cout << "arr: " << " ";
-    print_arr(arr);
+	
+    
+    arr = rand_from100_shape10(size_arr);
+    cout << "origin_arr(array)     : ";
+    print_arr(arr,size_arr);
 
     bubble_sort(arr,size_arr);
-    cout << "after_sort_arr: " << " ";
-    print_arr(arr);
+    cout << "bubble_sort_arr(array): ";
+    print_arr(arr,size_arr);
+    select_sort(arr,size_arr);
+    cout << "select_sort_arr(array): ";
+    print_arr(arr,size_arr);
 
 }
