@@ -2,15 +2,15 @@
 
 using namespace std;
 
-int* rand_from100_shape10(int n)
+int* rand_from100_shape10(int size, int max_num)
 {
-	int *res=new int[n];
+	int *res=new int[size];
     double random(double,double);
     srand(unsigned(time(0)));
 
-    for (int i=0;i<n;i++)
+    for (int i=0;i<size;i++)
     {
-        res[i] = int(random(0,100));
+        res[i] = int(random(0,max_num));
     }
 	return res;
 }
