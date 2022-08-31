@@ -9,7 +9,7 @@ cd Cpp_algorithm
 mkdir build && cd build
 ```
 
-+ 编辑程序
++ 编译程序
 ```
 cmake .. . && make
 ```
