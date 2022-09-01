@@ -1,4 +1,5 @@
 #include "sort_algorithm.hpp"
+#include "tools.hpp"
 
 using namespace std;
 
@@ -38,7 +39,8 @@ void mergeArray(int *arr, int low, int mid, int high, int *temp)
     int i = low;
     int j = mid + 1;
     int count = 0;
- 
+    // cout << "ij : " << i << j << endl;
+    // print_arr(temp,high+1);
     while((i <= mid) && (j <= high))
     {
         if(arr[i] < arr[j])
@@ -68,9 +70,34 @@ void merge_sort (int *arr, int start, int end, int *temp){
     mergeArray(arr, start, mid, end, temp);
 }
 
-void merge_sort_main(int *arr, int n){
-    int mid = (0+n) / 2;
-    int *temp = new int[n];
-    merge_sort(arr,0,mid,temp);
 
+void Solution::swap(int& a, int& b) {
+    int t = a;
+    a = b;
+    b = t;
+}
+
+int Solution::partition(int *arr, int low, int hight) {
+    int pivot = arr[hight];
+    int i = low;
+
+    for (int j = low; j <= hight - 1; ++j)  //注意这里的<=边界条件！
+    {
+        if (arr[j] < pivot) {
+
+            swap(arr[i], arr[j]);
+            ++i;
+        }
+    }
+    swap(arr[i], arr[hight]);
+    return i;
+}
+
+void Solution::quick_sort(int *arr, int low, int hight) {
+    if (low < hight) {
+
+        int q = partition(arr, low, hight);
+        quick_sort(arr, low, q - 1);
+        quick_sort(arr, q + 1, hight);
+    }
 }
