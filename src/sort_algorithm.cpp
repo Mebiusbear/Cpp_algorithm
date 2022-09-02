@@ -32,45 +32,6 @@ void select_sort(int *arr,int n){
     }
 }
 
-
-
-void mergeArray(int *arr, int low, int mid, int high, int *temp)
-{
-    int i = low;
-    int j = mid + 1;
-    int count = 0;
-    // cout << "ij : " << i << j << endl;
-    // print_arr(temp,high+1);
-    while((i <= mid) && (j <= high))
-    {
-        if(arr[i] < arr[j])
-            temp[count++] = arr[i++];
-        else
-            temp[count++] = arr[j++];
-    }
- 
-    while(i<=mid)
-        temp[count++] = arr[i++];
- 
-    while(j<=high)
-        temp[count++] = arr[j++];
- 
-    for(int i = 0; i < count; i++)
-        arr[low + i] = temp[i];
-}
-
-void merge_sort (int *arr, int start, int end, int *temp){
-    if (start >= end){
-        return ;
-    }
-    int mid = (start+end) / 2;
-
-    merge_sort(arr,start,mid,temp);
-    merge_sort(arr,mid+1,end,temp);
-    mergeArray(arr, start, mid, end, temp);
-}
-
-
 void Solution::swap(int& a, int& b) {
     int t = a;
     a = b;
@@ -102,14 +63,14 @@ void Solution::quick_sort(int *arr, int low, int hight) {
     }
 }
 
-void merge_sort_1(int *arr, int l, int r, int *tmp)
+void merge_sort(int *arr, int l, int r, int *tmp)
 {
     if (l >= r) return;
 
     int mid = (l + r) >> 1;
     //
-    merge_sort_1(arr, l, mid, tmp);
-    merge_sort_1(arr, mid + 1, r, tmp);
+    merge_sort(arr, l, mid, tmp);
+    merge_sort(arr, mid + 1, r, tmp);
 
     int k = 0, i = l, j = mid + 1;
     while (i <= mid && j <= r)
