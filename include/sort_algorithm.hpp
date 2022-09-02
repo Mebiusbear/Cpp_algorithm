@@ -3,9 +3,7 @@
 
 void bubble_sort(int *arr, int n);
 void select_sort(int *arr, int n);
-
-void merge_sort (int *arr, int start, int end, int *temp);
-void mergeArray(int *arr, int low, int mid, int high, int *temp);
+void merge_sort(int *arr, int l, int r, int *tmp);
 
 class Solution
 {

@@ -101,3 +101,23 @@ void Solution::quick_sort(int *arr, int low, int hight) {
         quick_sort(arr, q + 1, hight);
     }
 }
+
+void merge_sort_1(int *arr, int l, int r, int *tmp)
+{
+    if (l >= r) return;
+
+    int mid = (l + r) >> 1;
+    //
+    merge_sort_1(arr, l, mid, tmp);
+    merge_sort_1(arr, mid + 1, r, tmp);
+
+    int k = 0, i = l, j = mid + 1;
+    while (i <= mid && j <= r)
+        if (arr[i] <= arr[j]) tmp[k ++ ] = arr[i ++ ];
+        else tmp[k ++ ] = arr[j ++ ];
+
+    while (i <= mid) tmp[k ++ ] = arr[i ++ ];
+    while (j <= r) tmp[k ++ ] = arr[j ++ ];
+
+    for (i = l, j = 0; i <= r; i ++, j ++ ) arr[i] = tmp[j];
+}

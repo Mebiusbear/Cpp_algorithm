@@ -41,8 +41,6 @@ void test_main(int size_arr, int max_num){
     so.quick_sort(arr,0,size_arr-1);
     cout << "quick_sort_arr(array) : ";
     print_arr(arr,size_arr);
-
-
 }
 
 void runtime_main(int size_arr, int max_num){
@@ -56,12 +54,12 @@ void runtime_main(int size_arr, int max_num){
     cout << "size of arr(num)      : "
          << size_arr << endl;
 	
-    arr = rand_from100_shape10(size_arr,max_num);
-    start = clock();//开始时间
-    bubble_sort(arr,size_arr);
-    cout << "bubble_sort_arr(array): ";
-    end = clock();   //结束时间
-    cout<<"time = "<<double(end-start)/CLOCKS_PER_SEC<<"s"<<endl;  //输出时间（单位：ｓ）
+//     arr = rand_from100_shape10(size_arr,max_num);
+//     start = clock();//开始时间
+//     bubble_sort(arr,size_arr);
+//     cout << "bubble_sort_arr(array): ";
+//     end = clock();   //结束时间
+//     cout<<"time = "<<double(end-start)/CLOCKS_PER_SEC<<"s"<<endl;  //输出时间（单位：ｓ）
 
     arr = rand_from100_shape10(size_arr,max_num);    
     start = clock();//开始时间
@@ -73,8 +71,8 @@ void runtime_main(int size_arr, int max_num){
     arr = rand_from100_shape10(size_arr,max_num);
     start = clock();//开始时间
     // merge_sort_main(arr,size_arr);
-    int *temp = new int[size_arr];
-    merge_sort(arr,0,size_arr-1,temp);
+    int *tmp = new int[size_arr];
+    merge_sort(arr,0,size_arr-1,tmp);
     cout << "merge_sort_arr(array) : ";
     end = clock();   //结束时间
     cout<<"time = "<<double(end-start)/CLOCKS_PER_SEC<<"s"<<endl;  //输出时间（单位：ｓ）
@@ -86,14 +84,12 @@ void runtime_main(int size_arr, int max_num){
     cout << "quick_sort_arr(array) : ";
     end = clock();   //结束时间
     cout<<"time = "<<double(end-start)/CLOCKS_PER_SEC<<"s"<<endl;  //输出时间（单位：ｓ）
-
-
 }
 
 
 int main(){
 
-    runtime_main(30000,1000000); // use (30000,1000000)
+//     runtime_main(60000,1000000); // use (30000,1000000)
     test_main(20,100); // use (20,100)
 
 }
