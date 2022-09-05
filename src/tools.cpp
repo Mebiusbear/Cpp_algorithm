@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int* rand_from100_shape10(int size, int max_num)
+int* rand_fromsize_shapemax_num(int size, int max_num)
 {
 	int *res=new int[size];
     double random(double,double);
