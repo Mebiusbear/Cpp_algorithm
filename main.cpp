@@ -112,6 +112,7 @@ void test_stuct(int *arr, int size_arr){
 
 int main(){
 
+<<<<<<< HEAD
     // runtime_main(60000,1000000); // use (30000,1000000)
     // test_main(20,100); // use (20,100)
 
@@ -121,5 +122,9 @@ int main(){
     Apple a(2);
     cout<<a.getCount()<<endl;
 
+=======
+    runtime_main(60000,1000000); // use (30000,1000000)
+    // test_main(20,100); // use (20,100)
+>>>>>>> 3129d09 (main)
 
 }
