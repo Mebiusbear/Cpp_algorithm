@@ -2,6 +2,7 @@
 #include "tools.hpp"
 #include "sort_algorithm.hpp"
 #include "stuck_algorithm.hpp"
+#include "study_const.hpp"
 #include <time.h>
 
 using namespace std;
@@ -113,7 +114,12 @@ int main(){
 
     // runtime_main(60000,1000000); // use (30000,1000000)
     // test_main(20,100); // use (20,100)
-    int *arr = rand_fromsize_shapemax_num(10,200);
-    test_stuct(arr,10);
+
+    // int *arr = rand_fromsize_shapemax_num(10,200);
+    // test_stuct(arr,10);
+
+    Apple a(2);
+    cout<<a.getCount()<<endl;
+
 
 }
