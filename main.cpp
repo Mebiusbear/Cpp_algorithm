@@ -1,4 +1,6 @@
 #include <iostream>
+#include "point.hpp"
+#include "circle.hpp"
 #include "tools.hpp"
 #include "sort_algorithm.hpp"
 #include "stuck_algorithm.hpp"
@@ -112,19 +114,30 @@ void test_stuct(int *arr, int size_arr){
 
 int main(){
 
-<<<<<<< HEAD
     // runtime_main(60000,1000000); // use (30000,1000000)
     // test_main(20,100); // use (20,100)
 
     // int *arr = rand_fromsize_shapemax_num(10,200);
     // test_stuct(arr,10);
 
-    Apple a(2);
-    cout<<a.getCount()<<endl;
+    // Apple a(2);
+    // cout<<a.getCount()<<endl;
 
-=======
-    runtime_main(60000,1000000); // use (30000,1000000)
-    // test_main(20,100); // use (20,100)
->>>>>>> 3129d09 (main)
-
+    Point a;
+    Point b;
+    a.setx(1);
+    a.sety(4);
+    b.setx(3);
+    b.sety(3);
+    cout << "a_point : ";
+    a.print_XY();
+    cout << "b_point : ";
+    b.print_XY();
+    double dis = a.distance(b);
+    cout << dis << endl;
+    Circle o;
+    o.setr(2);
+    o.setcenter(a);
+    double area = o.print_area();
+    cout << area << endl;
 }

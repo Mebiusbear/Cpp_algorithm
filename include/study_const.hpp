@@ -1,5 +1,5 @@
 # include <iostream>
-
+# include <math.h>
 void test_1();
 void test_2();
 void test_4(int output,const int input);
@@ -15,4 +15,5 @@ public:
     void take(int num) const;
     int getCount() const;
 };
+
 

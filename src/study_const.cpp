@@ -54,3 +54,7 @@ int Apple::getCount() const
     take(1);
     return apple_number;
 }
+
+
+
+
