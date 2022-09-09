@@ -112,17 +112,7 @@ void test_stuct(int *arr, int size_arr){
 
 }
 
-int main(){
-
-    // runtime_main(60000,1000000); // use (30000,1000000)
-    // test_main(20,100); // use (20,100)
-
-    // int *arr = rand_fromsize_shapemax_num(10,200);
-    // test_stuct(arr,10);
-
-    // Apple a(2);
-    // cout<<a.getCount()<<endl;
-
+void test_circle(){
     Point a;
     Point b;
     a.setx(1);
@@ -134,10 +124,25 @@ int main(){
     cout << "b_point : ";
     b.print_XY();
     double dis = a.distance(b);
-    cout << dis << endl;
+    cout << "a,b distance : " << dis << endl;
     Circle o;
-    o.setr(2);
+    o.setr(3);
     o.setcenter(a);
     double area = o.print_area();
-    cout << area << endl;
+    cout << "circle's area : " << area << endl;
+    o.incircle(b);
+}
+
+int main(){
+
+    // runtime_main(60000,1000000); // use (30000,1000000)
+    // test_main(20,100); // use (20,100)
+
+    // int *arr = rand_fromsize_shapemax_num(10,200);
+    // test_stuct(arr,10);
+
+    // Apple a(2);
+    // cout<<a.getCount()<<endl;
+    test_circle();
+
 }

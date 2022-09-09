@@ -13,4 +13,5 @@ public:
     int setr(int mr);
     int setcenter(Point o);
     double print_area();
+    void incircle(Point a);
 };
